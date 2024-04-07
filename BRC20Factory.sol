@@ -7,7 +7,7 @@ import "./BRC20.sol";
 
 contract BRC20Factory  {
 
-    bytes32 private constant DOMAIN_NAME = keccak256("MultiBit");
+    bytes32 private constant DOMAIN_NAME = keccak256("Unibit");
     bytes32 public constant DOMAIN_TYPEHASH = keccak256("EIP712Domain(string name,string version,uint256 chainId,address verifyingContract)");
     bytes32 public constant MINT_TYPEHASH = keccak256(abi.encodePacked("Mint(address token,address to,uint256 amount,string txid)"));
     bytes32 public DOMAIN_SEPARATOR;
